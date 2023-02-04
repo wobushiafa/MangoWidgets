@@ -24,4 +24,8 @@
 		<NoWarn>CS0414;CS0618;CS8604;CS8618;CS8765</NoWarn>
     </PropertyGroup>
 
+	<ItemGroup Condition="'$(TargetFramework)' != 'net461'">
+		<PackageReference Include="System.Drawing.Common" Version="7.0.0"/>
+	</ItemGroup>
+
 </Project>

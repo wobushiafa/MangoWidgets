@@ -2,5 +2,6 @@
   <ResourceDictionary.MergedDictionaries>
     <ResourceDictionary Source="Window.xaml" />
     <ResourceDictionary Source="DialogHost.xaml" />
+    <ResourceDictionary Source="TitleBar.xaml" />
   </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
