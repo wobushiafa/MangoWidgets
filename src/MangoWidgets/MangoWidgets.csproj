@@ -4,7 +4,7 @@
         <TargetFramework>net7.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
-		<TargetFrameworks>net7.0-windows;net6.0-windows;net5.0-windows;netcoreapp3.1;net48;net47;net461</TargetFrameworks>
+		<TargetFrameworks>net7.0-windows;net6.0-windows;netcoreapp3.1;net48;net47</TargetFrameworks>
 		<Nullable>enable</Nullable>
 		<LangVersion>Latest</LangVersion>
 		<OutputType>Library</OutputType>

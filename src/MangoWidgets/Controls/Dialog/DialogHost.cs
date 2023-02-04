@@ -1,6 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using MangoWidgets.Common;
 
 namespace MangoWidgets.Controls;
@@ -8,6 +9,8 @@ namespace MangoWidgets.Controls;
 public class DialogHost:ContentControl,IDialogHost
 {
     private TaskCompletionSource<bool?>?_tsc = null;
+
+    #region 依赖属性
 
     public bool IsShown
     {
@@ -18,28 +21,21 @@ public class DialogHost:ContentControl,IDialogHost
     public double DialogWidth
     {
         get => (double)GetValue(DialogWidthProperty);
-        set => SetValue(DialogWidthProperty,value);
+        set => SetValue(DialogWidthProperty, value);
     }
 
     public double DialogHeight
     {
-        get=>(double)GetValue(DialogHeightProperty); 
-        set=>SetValue(DialogHeightProperty,value);
+        get => (double)GetValue(DialogHeightProperty);
+        set => SetValue(DialogHeightProperty, value);
     }
-    
-    public event RoutedDialogHostEvent? Opened
+
+    public Brush ShadeBrush
     {
-        add => AddHandler(OpenedEvent, value);
-        remove => RemoveHandler(OpenedEvent, value);
+        get => (Brush)GetValue(ShadeBrushProperty);
+        set => SetValue(ShadeBrushProperty, value);
     }
-    
-    public event RoutedDialogHostEvent? Closed
-    {
-        add => AddHandler(ClosedEvent, value);
-        remove => RemoveHandler(ClosedEvent, value);
-    }
-    
-    #region 依赖属性
+
     public static readonly DependencyProperty IsShownProperty = DependencyProperty.Register(
         nameof(IsShown), typeof(bool), typeof(DialogHost), new PropertyMetadata(false,OnIsShownChange));
 
@@ -52,20 +48,38 @@ public class DialogHost:ContentControl,IDialogHost
         typeof(double),
         typeof(DialogHost),
         new PropertyMetadata(200d));
+
+    public static readonly DependencyProperty ShadeBrushProperty = DependencyProperty.Register(nameof(ShadeBrush),
+    typeof(Brush),
+    typeof(DialogHost),
+    new PropertyMetadata(new SolidColorBrush(Color.FromArgb(100,0,0,0))));
     #endregion
-    
+
     #region 路由事件
+    
+    public event RoutedDialogHostEvent? Opened
+    {
+        add => AddHandler(OpenedEvent, value);
+        remove => RemoveHandler(OpenedEvent, value);
+    }
+
+    public event RoutedDialogHostEvent? Closed
+    {
+        add => AddHandler(ClosedEvent, value);
+        remove => RemoveHandler(ClosedEvent, value);
+    }
+    
 
     public static readonly RoutedEvent OpenedEvent = EventManager.RegisterRoutedEvent(nameof(Opened),
         RoutingStrategy.Bubble,
-        typeof(RoutedDialogEvent),
+        typeof(RoutedDialogHostEvent),
         typeof(DialogHost));
 
     public static readonly RoutedEvent ClosedEvent = EventManager.RegisterRoutedEvent(nameof(Closed),
         RoutingStrategy.Bubble,
-        typeof(RoutedDialogEvent),
+        typeof(RoutedDialogHostEvent),
         typeof(DialogHost));
-    
+
     #endregion
 
     private static void OnIsShownChange(DependencyObject d, DependencyPropertyChangedEventArgs e)
