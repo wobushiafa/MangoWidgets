@@ -3,7 +3,7 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 /// <summary>
 /// Specifies the state of the progress indicator in the Windows task bar.

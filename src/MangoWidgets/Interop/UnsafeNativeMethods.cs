@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
-using IMango.Widgets.Controls;
+using MangoWidgets.Appearance;
 
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 /// <summary>
 /// A set of dangerous methods to modify the appearance.

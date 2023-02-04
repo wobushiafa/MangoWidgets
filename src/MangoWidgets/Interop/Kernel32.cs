@@ -13,7 +13,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 /// <summary>
 /// Used by multiple technologies.

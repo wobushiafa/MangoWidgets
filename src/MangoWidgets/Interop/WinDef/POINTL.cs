@@ -8,7 +8,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace IMango.Widgets.WinDef;
+namespace MangoWidgets.WinDef;
 
 /// <summary>
 /// The <see cref="POINTL"/> structure defines the x- and y-coordinates of a point.

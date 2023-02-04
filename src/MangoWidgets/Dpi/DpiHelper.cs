@@ -9,7 +9,7 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media;
 
-namespace IMango.Widgets.Dpi;
+namespace MangoWidgets.Dpi;
 
 /// <summary>
 /// Provides access to various DPI-related methods.

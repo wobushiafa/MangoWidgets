@@ -14,7 +14,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 // Windows Kits\10\Include\10.0.22000.0\um\dwmapi.h
 

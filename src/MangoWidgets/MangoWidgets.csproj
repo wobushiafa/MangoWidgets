@@ -21,6 +21,7 @@
 		<IsPackable>true</IsPackable>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<NoWarn>CS0414;CS0618;CS8604;CS8618;CS8765</NoWarn>
     </PropertyGroup>
 
 </Project>

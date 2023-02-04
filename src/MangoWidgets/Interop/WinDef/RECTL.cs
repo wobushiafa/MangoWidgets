@@ -9,7 +9,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace IMango.Widgets.WinDef;
+namespace MangoWidgets.WinDef;
 
 /// <summary>
 /// The RECTL structure defines a rectangle by the coordinates of its upper-left and lower-right corners.

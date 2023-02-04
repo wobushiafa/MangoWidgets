@@ -4,7 +4,7 @@
 
 using System;
 
-namespace IMango.Widgets.Dpi;
+namespace MangoWidgets.Dpi;
 
 /// <summary>
 /// Stores DPI information from which a System.Windows.Media.Visual or System.Windows.UIElement

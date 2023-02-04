@@ -18,7 +18,7 @@ using System.Windows;
 
 // ReSharper disable InconsistentNaming
 
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 /// <summary>
 /// USER procedure declarations, constant definitions and macros.

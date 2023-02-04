@@ -2,12 +2,9 @@
 // If a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/MIT.
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
+using MangoWidgets.Appearance;
 
-
-
-using IMango.Widgets.Controls;
-
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 /// <summary>
 /// A set of dangerous methods to modify the appearance.

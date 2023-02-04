@@ -8,7 +8,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace IMango.Widgets.WinDef;
+namespace MangoWidgets.WinDef;
 
 /// <summary>
 /// <see cref="POINT"/> structure by reference.

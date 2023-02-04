@@ -7,7 +7,7 @@ using System;
 using System.Windows;
 using System.Windows.Interop;
 
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 /// <summary>
 /// Allows to change the status of the displayed notification in the application icon on the TaskBar.

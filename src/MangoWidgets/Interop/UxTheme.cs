@@ -15,7 +15,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 // ReSharper disable IdentifierTypo
 // ReSharper disable InconsistentNaming

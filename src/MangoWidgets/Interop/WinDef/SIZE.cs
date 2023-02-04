@@ -8,7 +8,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace IMango.Widgets.WinDef;
+namespace MangoWidgets.WinDef;
 
 /// <summary>
 /// The SIZE structure defines the width and height of a rectangle.

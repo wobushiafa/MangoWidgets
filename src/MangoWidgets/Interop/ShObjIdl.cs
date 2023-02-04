@@ -14,7 +14,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace IMango.Widgets;
+namespace MangoWidgets;
 
 /// <summary>
 /// Exposes methods that enumerate the contents of a view and receive notification from callback upon enumeration completion.

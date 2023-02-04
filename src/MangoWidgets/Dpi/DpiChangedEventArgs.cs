@@ -4,7 +4,7 @@
 
 using System.Windows;
 
-namespace IMango.Widgets.Dpi;
+namespace MangoWidgets.Dpi;
 
 public sealed class DpiChangedEventArgs : RoutedEventArgs
 {
