@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9B62C8D6-37DA-45BD-B629-7BC53A4F7BA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoWidgets.Sample", "src\MangoWidgets.Sample\MangoWidgets.Sample.csproj", "{4E495B29-1CFD-49CD-891E-AD02D3A2BE12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangoWidgets", "src\MangoWidgets\MangoWidgets.csproj", "{97FABF00-8CC2-4E4D-988D-91C771887F5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4E495B29-1CFD-49CD-891E-AD02D3A2BE12} = {9B62C8D6-37DA-45BD-B629-7BC53A4F7BA5}
+		{97FABF00-8CC2-4E4D-988D-91C771887F5F} = {9B62C8D6-37DA-45BD-B629-7BC53A4F7BA5}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E495B29-1CFD-49CD-891E-AD02D3A2BE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E495B29-1CFD-49CD-891E-AD02D3A2BE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E495B29-1CFD-49CD-891E-AD02D3A2BE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E495B29-1CFD-49CD-891E-AD02D3A2BE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FABF00-8CC2-4E4D-988D-91C771887F5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FABF00-8CC2-4E4D-988D-91C771887F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FABF00-8CC2-4E4D-988D-91C771887F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FABF00-8CC2-4E4D-988D-91C771887F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
