@@ -4,6 +4,23 @@
         <TargetFramework>net7.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
+		<TargetFrameworks>net7.0-windows;net6.0-windows;net5.0-windows;netcoreapp3.1;net48;net47;net461</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<LangVersion>Latest</LangVersion>
+		<OutputType>Library</OutputType>
+		<AppDesignerFolder>Properties</AppDesignerFolder>
+		<RootNamespace>MangoWidgets</RootNamespace>
+		<AssemblyName>MangoWidgets</AssemblyName>
+		<PackageId>MangoWidgets</PackageId>
+		<Product>MangoWidgets</Product>
+		<Title>MangoWidgets</Title>
+		<NeutralLanguage>zh-cn</NeutralLanguage>
+		<UseWPF>true</UseWPF>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<GenerateLibraryLayout>true</GenerateLibraryLayout>
+		<IsPackable>true</IsPackable>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
 
 </Project>
