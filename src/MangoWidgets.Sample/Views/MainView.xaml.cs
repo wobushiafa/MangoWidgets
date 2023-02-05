@@ -11,8 +11,8 @@ public partial class MainView : CustomWindow
 {
     public MainViewModel ViewModel { get; init; }
 
-    private readonly IDialogService<MainView> _dialogService;
-    public MainView(MainViewModel viewModel,IDialogService<MainView> dialogService)
+    private readonly IDialogService _dialogService;
+    public MainView(MainViewModel viewModel,IDialogService dialogService)
     {
         ViewModel = viewModel;
         DataContext= ViewModel;
@@ -20,12 +20,12 @@ public partial class MainView : CustomWindow
         InitializeComponent();
 
         _dialogService = dialogService;
-        _dialogService.SetDialogHost(RootDialogHost);
+        _dialogService.SetDialogHost<MainView>(RootDialogHost);
     }
 
     private async void btnShowDialog_Click(object sender, System.Windows.RoutedEventArgs e)
     {
         var dialogView = App.Resolve<TestDialogView>();
-        await _dialogService.ShowDialogAsync(dialogView);
+        await _dialogService.ShowDialogAsync<MainView>(dialogView);
     }
 }

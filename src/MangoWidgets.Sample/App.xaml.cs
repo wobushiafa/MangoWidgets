@@ -18,7 +18,7 @@ namespace MangoWidgets.Sample
             .ConfigureServices((context, services) => 
             {
                 services.AddHostedService<ApplicationHostService>();
-                services.AddSingleton<IDialogService<MainView>, DialogService<MainView>>();
+                services.AddSingleton<IDialogService, DialogService>();
 
                 services.AddTransient<MainView>();
                 services.AddTransient<MainViewModel>();
