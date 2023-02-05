@@ -24,7 +24,7 @@ public interface IDialogService
     Task<bool?> ShowDialogAsync(IDialogControl content);
 }
 
-public interface IDialogService<T> : IDialogService
+public interface IDialogService<T> : IDialogService where T : class
 {
     
 }

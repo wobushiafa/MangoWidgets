@@ -1,15 +1,29 @@
-﻿<controls:CustomWindow x:Class="MangoWidgets.Sample.MainWindow"
+﻿<controls:CustomWindow x:Class="MangoWidgets.Sample.Views.MainView"
                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                        xmlns:controls="clr-namespace:MangoWidgets.Controls;assembly=MangoWidgets"
                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                       xmlns:local="clr-namespace:MangoWidgets.Sample"
+                       xmlns:local="clr-namespace:MangoWidgets.Sample.Views"
                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                        Title="MainWindow"
                        Width="800"
                        Height="450"
                        mc:Ignorable="d">
-    <Grid>
-        <controls:TitleBar />
-    </Grid>
+
+  <Grid>
+    <Grid.Background>
+      <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Offset="0" Color="#FF8BC6EC" />
+        <GradientStop Offset="1" Color="#FF9599E2" />
+      </LinearGradientBrush>
+    </Grid.Background>
+
+    <Button Width="120"
+            Height="40"
+            Click="btnShowDialog_Click"
+            Content="ShowDialog" />
+
+    <controls:DialogHost x:Name="RootDialogHost" />
+    <controls:TitleBar />
+  </Grid>
 </controls:CustomWindow>

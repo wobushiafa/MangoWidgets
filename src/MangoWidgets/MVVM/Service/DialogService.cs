@@ -28,7 +28,7 @@ public class DialogService:IDialogService
     }
 }
 
-public class DialogService<T> : DialogService,IDialogService<T>
+public class DialogService<T> : DialogService,IDialogService<T> where T : class
 {
 
 }

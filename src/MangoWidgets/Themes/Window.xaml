@@ -11,11 +11,6 @@
         <SolidColorBrush Color="#252525" />
       </Setter.Value>
     </Setter>
-    <Setter Property="Foreground">
-      <Setter.Value>
-        <SolidColorBrush Color="#F1F1F1" />
-      </Setter.Value>
-    </Setter>
     <Setter Property="BorderBrush" Value="Transparent" />
     <Setter Property="BorderThickness" Value="0" />
     <Setter Property="Height" Value="600" />
