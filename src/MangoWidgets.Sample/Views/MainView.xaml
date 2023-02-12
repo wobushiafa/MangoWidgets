@@ -18,10 +18,15 @@
       </LinearGradientBrush>
     </Grid.Background>
 
-    <Button Width="120"
+    <StackPanel VerticalAlignment="Center">
+      <controls:ProgressRing IsIndeterminate="True" Margin="20"/>
+      <Button Width="120"
             Height="40"
             Click="btnShowDialog_Click"
             Content="ShowDialog" />
+    </StackPanel>
+
+
 
     <controls:DialogHost x:Name="RootDialogHost" />
     <controls:TitleBar />

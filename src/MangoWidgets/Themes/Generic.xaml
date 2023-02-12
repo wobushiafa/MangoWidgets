@@ -3,5 +3,6 @@
     <ResourceDictionary Source="Window.xaml" />
     <ResourceDictionary Source="DialogHost.xaml" />
     <ResourceDictionary Source="TitleBar.xaml" />
+    <ResourceDictionary Source="Progress.xaml" />
   </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
