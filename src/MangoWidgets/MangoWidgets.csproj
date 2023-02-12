@@ -20,7 +20,7 @@
 		<IsPackable>true</IsPackable>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<NoWarn>CS0414;CS0618;CS8604;CS8618;CS8765</NoWarn>
+		<NoWarn>CS0162;CS0414;CS0618;CS8601;CS8603;CS8604;CS8612;CS8618;CS8622;CS8625;CS8765;CS8767</NoWarn>
     </PropertyGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' != 'net461'">
