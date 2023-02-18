@@ -6,20 +6,17 @@
                         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
                         xmlns:local="clr-namespace:MangoWidgets.Sample.Views"
                         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:vm="clr-namespace:MangoWidgets.Sample.ViewModels"
                         Width="300"
                         Height="350"
+                        d:DataContext="{d:DesignInstance vm:TestDialogViewModel}"
+                        DialogResult="{Binding DialogResult}"
                         mc:Ignorable="d">
   <Grid Background="#FFF">
     <StackPanel VerticalAlignment="Center">
       <TextBlock HorizontalAlignment="Center">This is a dialogcontrol</TextBlock>
 
-      <Button Content="Close">
-        <i:Interaction.Triggers>
-          <i:EventTrigger EventName="Click">
-            <i:CallMethodAction MethodName="Close" TargetObject="{Binding RelativeSource={RelativeSource AncestorType=controls:DialogControl}}" />
-          </i:EventTrigger>
-        </i:Interaction.Triggers>
-      </Button>
+      <Button Command="{Binding CloseCommand}" Content="Close" />
     </StackPanel>
   </Grid>
 </controls:DialogControl>
