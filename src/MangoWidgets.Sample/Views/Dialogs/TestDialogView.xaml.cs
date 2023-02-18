@@ -6,7 +6,7 @@ namespace MangoWidgets.Sample.Views
     /// <summary>
     /// TestDialogView.xaml 的交互逻辑
     /// </summary>
-    public partial class TestDialogView : DialogControl
+    public partial class TestDialogView : DialogControl,IDialogControl<TestDialogViewModel>
     {
         public TestDialogViewModel ViewModel { get; init; }
 

@@ -1,4 +1,5 @@
-﻿using MangoWidgets.MVVM.Contracts;
+﻿using MangoWidgets.Controls;
+using MangoWidgets.MVVM.Contracts;
 using MangoWidgets.MVVM.Service;
 using MangoWidgets.Sample.ViewModels;
 using MangoWidgets.Sample.Views;
@@ -23,7 +24,7 @@ namespace MangoWidgets.Sample
                 services.AddTransient<MainView>();
                 services.AddTransient<MainViewModel>();
 
-                services.AddTransient<TestDialogView>();
+                services.AddTransient<IDialogControl<TestDialogViewModel>, TestDialogView>();
                 services.AddTransient<TestDialogViewModel>();
             })
             .Build();
