@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using MangoWidgets.Controls;
+using MangoWidgets.Interfaces;
 
 namespace MangoWidgets.MVVM.Contracts;
 

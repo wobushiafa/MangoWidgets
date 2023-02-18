@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using MangoWidgets.Common;
+using MangoWidgets.Interfaces;
 
 namespace MangoWidgets.Controls;
 

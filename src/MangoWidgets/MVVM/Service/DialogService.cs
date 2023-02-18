@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
-using MangoWidgets.Controls;
+using MangoWidgets.Interfaces;
 using MangoWidgets.MVVM.Contracts;
 
 namespace MangoWidgets.MVVM.Service;

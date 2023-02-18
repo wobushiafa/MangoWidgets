@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using MangoWidgets.Controls;
+using MangoWidgets.Interfaces;
 
 namespace MangoWidgets.Common;
 

@@ -1,4 +1,4 @@
-﻿using MangoWidgets.Controls;
+﻿using MangoWidgets.Interfaces;
 using MangoWidgets.MVVM.Contracts;
 using MangoWidgets.MVVM.Service;
 using MangoWidgets.Sample.ViewModels;

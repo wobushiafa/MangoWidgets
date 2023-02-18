@@ -1,6 +1,6 @@
 ﻿using MangoWidgets.Common;
 
-namespace MangoWidgets.Controls;
+namespace MangoWidgets.Interfaces;
 
 /// <summary>
 /// Dialog内容控件
@@ -18,7 +18,11 @@ public interface IDialogControl
     public bool? DialogResult { get; set; }
 }
 
-public interface IDialogControl<out T>:IDialogControl where T : class
+/// <summary>
+/// 更好的注入View,使ViewModel不需要引用View的命名空间
+/// </summary>
+/// <typeparam name="T"></typeparam>
+public interface IDialogControl<out T> : IDialogControl where T : class
 {
     T ViewModel { get; }
 }

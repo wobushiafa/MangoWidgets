@@ -1,4 +1,5 @@
 ﻿using MangoWidgets.Controls;
+using MangoWidgets.Interfaces;
 using MangoWidgets.MVVM.Contracts;
 using MangoWidgets.Sample.ViewModels;
 

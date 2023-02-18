@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using MangoWidgets.Common;
 
-namespace MangoWidgets.Controls;
+namespace MangoWidgets.Interfaces;
 
 public interface IDialogHost
 {
